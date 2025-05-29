@@ -36,12 +36,14 @@ def generate_page_recursive(
                 current_path,
                 template_path,
                 os.path.join(dest_dir_path, "index.html"),
+                base_path
             )
         else:
             generate_page_recursive(
                 current_path,
                 template_path,
                 os.path.join(dest_dir_path, dir_content),
+                base_path
             )
 
 
